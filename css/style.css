@@ -1,0 +1,277 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ddd;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #333; /* Gaya tombol kotak seperti di mockup */
+}
+
+/* Cek di file style.css, udah ada ini belum? */
+/* Di file style.css */
+
+.logo img {
+    height: 50px;        /* Ini ukuran tingginya (bisa diubah) */
+    width: 50px;         /* PENTING: Lebar harus sama dengan tinggi biar jadi bulat sempurna */
+    object-fit: cover;   /* Biar gambar dipotong rapi pas di dalam lingkaran */
+    border-radius: 50%;  /* <-- INI MANTRA SAKTINYA BIAR BULAT */
+    display: block;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Style untuk gambar banner */
+.hero-banner {
+    width: 100%;          
+    max-width: 1360px;    
+    height: auto;         
+    max-height: 400px;    
+    object-fit: cover;    
+    margin-top: 20px;     
+    border-radius: 8px;   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hapus style .banner-placeholder yang lama kalau sudah tidak dipakai */
+
+/* Update bagian .circle yang lama */
+.circle {
+    width: 100px;       /* Pastikan ukuran lebar & tinggi sama */
+    height: 100px;
+    border-radius: 50%; /* Membuat jadi bulat */
+    border: 2px solid #333; /* Garis pinggir (opsional, sesuai template) */
+    
+    /* --- TAMBAHAN PENTING --- */
+    overflow: hidden;  
+    
+    margin: 0 auto;    
+}
+
+/* --- TAMBAHAN CSS BARU --- */
+/* Mengatur gambar di dalam lingkaran */
+.circle img {
+    width: 100%;        
+    height: 100%;       
+    object-fit: cover;  
+}
+
+/* HEADQUARTERS */
+.headquarters {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fafafa;
+}
+
+.hq-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.hq-item p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 50%; /* Membuat lingkaran */
+    margin: 0 auto;
+}
+
+/* MESSAGE US */
+.message-us {
+    padding: 40px 50px;
+    border-top: 2px solid #ddd;
+}
+
+.message-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.form-section, .result-section {
+    width: 48%;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input[type="text"],
+.input-group input[type="date"],
+.input-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ddd;
+    border: 1px solid #333;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+#result-box {
+    border: 1px solid #333;
+    padding: 20px;
+    height: 100%;
+    background-color: #fff;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE (Untuk Tampilan Mobile) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Sederhana: sembunyikan menu di HP dulu */
+    }
+    
+    .hq-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .message-container {
+        flex-direction: column;
+    }
+
+    .form-section, .result-section {
+        width: 100%;
+    }
+}
+
+/* --- TAMBAHAN STYLE UNTUK PROFILE PAGE --- */
+
+/* Style Banner Profil */
+.profile-banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.profile-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Latar hitam transparan */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Style About & Visi Misi */
+.about-section, .visimisi-section {
+    padding: 40px 20px;
+    max-width: 1000px; /* Supaya tulisan tidak terlalu melebar */
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Layout Kreatif Visi Misi (Flexbox 2 Kolom) */
+.visimisi-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.vm-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    width: 45%; /* Setengah layar */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Efek bayangan */
+    border-radius: 10px;
+    transition: transform 0.3s; /* Efek animasi saat hover */
+}
+
+/* Efek saat mouse diarahkan ke kartu visi misi */
+.vm-card:hover {
+    transform: translateY(-5px); /* Naik sedikit */
+    border-color: #333;
+}
+
+.vm-card ul {
+    list-style-position: inside; /* Supaya bullet point rapi di tengah */
+    text-align: left;
+}
+
+/* Responsive Profile untuk HP */
+@media (max-width: 768px) {
+    .visimisi-section {
+        flex-direction: column; /* Jadi tumpuk ke bawah di HP */
+        align-items: center;
+    }
+    
+    .vm-card {
+        width: 100%;
+    }
+}

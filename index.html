@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="images/CeceEren.jpeg" alt="Logo Profil">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Our Profile</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Message Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Hi <span id="user-name">Guest</span>, Welcome To Website</h1>
+        <p>Ini adalah website latihan pertama di RevoU</p>
+        
+        <img src="images/banerjjk.jpg" alt="Banner Website" class="hero-banner">
+    </section>
+
+    <section class="headquarters">
+    <h2>Our Headquarter</h2>
+    <div class="hq-container">
+        <div class="hq-item">
+            <div class="circle">
+                 <img src="images/majalengka.jpg" alt="Majalengka">
+            </div>
+            <p>Majalengka</p>
+        </div>
+
+        <div class="hq-item">
+            <div class="circle">
+                 <img src="images/bandung.jpg" alt="Bandung">
+            </div>
+            <p>Bandung</p>
+        </div>
+
+        <div class="hq-item">
+            <div class="circle">
+                 <img src="images/purwakartaa.jpg" alt="Purwakarta">
+            </div>
+            <p>Purwakarta</p>
+        </div>
+    </div>
+</section>
+
+    <section class="message-us">
+        <div class="message-container">
+            <div class="form-section">
+                <h3>Message Us</h3>
+                <form id="message-form">
+                    <div class="input-group">
+                        <label>Nama</label>
+                        <input type="text" id="nama" placeholder="Nama Lengkap">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Tanggal Lahir</label>
+                        <input type="date" id="tgl-lahir">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Jenis Kelamin</label>
+                        <div class="radio-group">
+                            <input type="radio" name="gender" value="Laki-laki" id="male"> <label for="male">Laki-laki</label>
+                            <input type="radio" name="gender" value="Perempuan" id="female"> <label for="female">Perempuan</label>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Pesan</label>
+                        <textarea id="pesan" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="result-section">
+                <div id="result-box">
+                    <p>Hasil data akan muncul di sini...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by Cece Aditya</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
